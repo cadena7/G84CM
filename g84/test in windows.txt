@@ -1,0 +1,51 @@
+
+GUIADOR 84CM
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador84cm/test_epl/uiepls/motoresui/src
+
+python3 motgui-84.py
+
+
+
+
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador84cm/test_epl/uiepls/gscui/src
+
+python3 gscui.py --port 1883 --host localhost --debug=1 --tel="84cm"
+
+python3 gscui.py --port 1883 --host 192.168.0.1 --debug=1 --tel="84cm"
+
+
+
+
+
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador84cm/test_epl/epls/scripts
+./ejec_gsc_d.sh stop
+./ejec_consola_d.sh stop
+sleep 1
+./corre_serv_gsc_84.sh
+
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador84cm/test_epl/uiepls/scripts
+./ejec_gscui.sh > /dev/null &
+sleep 1
+./ejec_mot_guiadorui-84.sh > /dev/null &
+sleep 1
+
+
+Directorio para instalar todo:
+/home/observa/chava/test_epl
+
+
+
+
+GUIADOR 2M
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador2m/test_epl/uiepls/motoresui/src
+
+python3 motgui-2m.py
+
+
+
+
+cd /mnt/c/Users/cadena/Dropbox/UNAM/Programacion/Python/Guiador2m/test_epl/uiepls/gscui/src
+
+python3 gscui.py --port 1883 --host localhost --debug=1 --tel="2m"
+
+python3 gscui.py --port 1883 --host 192.168.0.1 --debug=1 --tel="2m"
