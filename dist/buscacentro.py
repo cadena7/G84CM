@@ -317,6 +317,7 @@ def identif_pos_regla(eje):
         p1 = ((k1-20)/10 +1 )*10000 + k1
     return p1
 
+
 def busca_entrada_indice_cero(eje):
     """ Se asegura q el indice este en nivel cero"""
     i=0
@@ -349,6 +350,7 @@ def busca_entrada_indice_cero(eje):
         i = i + 1
     print("No hallo cambio en 5 intentos (INDICE)", eje.nombre)
     return False
+
 
 def busca_centro_regleta(eje):
     eje.estado_busca_inicio = 0 # idle
@@ -440,4 +442,74 @@ def busca_centro_zoom( eje ):
     eje.colaMsg.put(('C','RST_S CONTROL_PIDX') )
     eje.hallo_inicio = True
     eje.buscando_inicio = False
+    return True
+
+
+
+
+
+
+#Fix temporal Lazo abierto sin switch
+# Ajustables
+VEL_DAX_DEC = 5000        # dirección y velocidad en lazo abierto
+TIEMPO_LAZO_ABIERTO_DEC = 10.0  # segundos al extremo
+TIMER_ESPERA = 120         # ciclos de 0.5 s
+
+
+def busca_centro_sin_switch_dec(eje):
+    eje.hallo_inicio = False
+    eje.estado_busca_inicio = 0  # idle
+    time.sleep(0.5)
+    eje.pide_estado_q()
+    time.sleep(0.5)
+
+    print("Inicia busca inicio (lazo abierto, sin switch):", eje.nombre)
+
+    # 1) Preparar lazo abierto
+    eje.colaMsg.put(('C', 'RST_S ERROR_MAXX 0'))
+    time.sleep(0.5)
+
+    #eje.mot.inicia_busca_inicios_x()
+    time.sleep(0.5)
+
+    # 2) Mover en lazo abierto
+    eje.colaMsg.put(('C', f'DAX {VEL_DAX_DEC}'))
+    time.sleep(TIEMPO_LAZO_ABIERTO_DEC)
+
+    # 3) Detener
+    eje.colaMsg.put(('C', 'DAX 0'))
+    time.sleep(0.5)
+
+    # 4) Reset + regreso a control por posición
+    eje.colaMsg.put(('C', 'RST_S CONTROL_PIDX'))
+    time.sleep(1.0)
+
+    #eje.mot.pon_bandera_busca_inicio_x(0)
+
+    # 5) Mover al centro
+    eje.mueve_q(eje.pos_centro)
+    time.sleep(0.5)
+
+    cta = 0
+    while cta < TIMER_ESPERA:
+        eje.pide_estado_q()
+        time.sleep(0.5)
+
+        if eje.mot.en_posicion() or eje.mot.fin_trayectoria():
+            print("Eje en posición central")
+            break
+        cta += 1
+
+    if cta >= TIMER_ESPERA:
+        print("Error: no llegó a centro:", eje.nombre)
+        eje.estado_busca_inicio = 100
+        return False
+
+    # 6) Reset final de cuentas
+    time.sleep(1.0)
+    eje.colaMsg.put(('C', 'RST_S CONTROL_PIDX'))
+    time.sleep(0.5)
+    eje.hallo_inicio = True
+    eje.buscando_inicio = False
+    eje.estado_busca_inicio = 0
     return True

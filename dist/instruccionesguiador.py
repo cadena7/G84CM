@@ -74,8 +74,9 @@ ejeFOCO = ejes.Eje( nombre="FOCO",ip="192.168.8.2")
 #Entonacion en laboratorio de Ensenada el 6 de noviembre 2025 (Cadena y Chava)
 #Falta sumar el offset en la noche de instalacion ya con estrella de guiado
 ejeAR.pos_centro = (5100-10950)
-ejeDEC.pos_centro = (-5000+631)
-ejeFOCO.pos_centro = 100+0
+#ejeDEC.pos_centro = (-5000+631)    # original con switch de labo (logica prox inversa)
+ejeDEC.pos_centro = (+4500)         # fix temporal centrandolo sin switch/a ojo (enero 2026)
+ejeFOCO.pos_centro = (100+0)
 
 
 ejeAR.bandera_inicio = 0x2
@@ -441,6 +442,7 @@ def arranca_hebra_inicio_ar():
 def arranca_hebra_inicio_dec():
     DatosGuiador['BUSCA_INICIO_DEC'] = False
     res = bcentros.busca_centro_dec( ejeDEC )
+    #res = bcentros.busca_centro_sin_switch_dec( ejeDEC )  #Fix temporal Lazo abierto sin switch
     print("Termino busca inicio DEC")
 
 
