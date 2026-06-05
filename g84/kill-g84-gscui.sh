@@ -24,4 +24,3 @@ for pid in $(ps -ef | grep "/home/observa/instrumentacion/bin/g84-faucet 4957 --
 
 for pid in $(ps -ef | grep "python gscd.py --host 192.168.0.239 --port 1883 --tel 84cm" | awk '{print $2}'); do kill -15 $pid; done
 
-

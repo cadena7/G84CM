@@ -1,0 +1,18 @@
+Limites Mecanicos G84 después de Inicializar Ejes
+
+Positivos
+DEC
+1050.0
+AR
+1385.0
+FOCO
+48.0
+
+
+Negativos
+DEC
+-884.0
+AR
+-1512.0
+FOCO
+-65.0

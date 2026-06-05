@@ -1,0 +1,103 @@
+Base de datos '/home/observa/cadena/G84_Logger/mqtt_data.db' y tabla 'sensor_readings' configuradas.
+Iniciando la captura de datos MQTT. Se ejecutará por 12 horas.
+Hora de inicio: 2026-06-03 19:23:13
+Hora de finalización estimada: 2026-06-04 07:23:13
+Conectado exitosamente al broker MQTT.
+Suscrito al tópico: 'oan/control/84cm/guiador/motores/status'
+[19:23:14] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:15] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:17] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:19] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:20] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:22] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:24] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:25] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:27] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:29] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:30] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:32] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:34] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:35] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:37] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:39] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:40] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:42] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:43] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:45] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:47] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:48] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:50] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:52] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:53] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:55] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:57] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:23:58] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:24:00] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:24:02] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+
+Señal 15 recibida. Deteniendo la captura de datos...
+Base de datos '/home/observa/cadena/G84_Logger/mqtt_data.db' y tabla 'sensor_readings' configuradas.
+Iniciando la captura de datos MQTT. Se ejecutará por 12 horas.
+Hora de inicio: 2026-06-03 19:28:57
+Hora de finalización estimada: 2026-06-04 07:28:57
+Conectado exitosamente al broker MQTT.
+Suscrito al tópico: 'oan/control/84cm/guiador/motores/status'
+[19:28:59] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:00] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:02] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:04] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:05] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:07] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:09] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:10] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:12] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:14] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:15] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:17] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:19] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:20] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:22] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:24] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:25] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:27] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:29] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:30] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:32] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:34] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:35] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:37] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:39] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:40] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:42] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:44] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:45] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:47] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:49] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:50] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:52] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:53] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:55] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:57] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:29:58] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:00] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:02] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:03] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:05] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:07] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:08] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:10] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:12] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:13] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:15] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:17] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:18] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:20] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:22] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:23] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:25] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:27] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:28] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:30] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+[19:30:32] Datos recibidos e insertados: AR=1038.133, DEC=-507.3246527777778, FOCO=-34.0
+
+Señal 15 recibida. Deteniendo la captura de datos...

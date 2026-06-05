@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/observa/cadena/guiador_v001/g84
+cd /home/observa/cadena/guiador/g84
 
 source fns_g84.sh
 

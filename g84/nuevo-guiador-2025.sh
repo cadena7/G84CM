@@ -36,11 +36,11 @@ rm /tmp/gsc-gtk.sock
 rm /tmp/autoguiado.log
 
 
-ELFAUCET=$INSTRUMENTACION/bin/g84-faucet
+#ELFAUCET=$INSTRUMENTACION/bin/g84-faucet
 
 #killall -KILL $ELFAUCET
-killall -KILL $ELFAUCET
+#killall -KILL $ELFAUCET
 
 
-$ELFAUCET 4957 --in --out /bin/bash $INSTRUMENTACION/bin/trad-guiado.sh &
+#$ELFAUCET 4957 --in --out /bin/bash $INSTRUMENTACION/bin/trad-guiado.sh &
 

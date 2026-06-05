@@ -5,4 +5,4 @@ cd /home/observa/cadena/guiador/g84
 
 source fns_g84.sh
 
-abre_lazos_g84
+cierra_lazos_g84
