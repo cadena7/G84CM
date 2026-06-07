@@ -7,7 +7,7 @@ Fecha   14 mayo 2025
 El directorio en el pi de estos archivos es: /home/guiador/dist
 
 #Para hacer una conexión con una terminal:
-ssh guiador@192.168.0.205
+ssh guiador@192.168.0.208
 contraseña p4guiador
 
 #checar temperatura de la rpi
