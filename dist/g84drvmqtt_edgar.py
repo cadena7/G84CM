@@ -10,15 +10,15 @@ import re
 # de preferencia mayor a 5s para que inicien otros servicios primero
 RETARDO_INICIO_S = 7
 
-PREFIX = "oan/control/84cm/guiador/motores/"   # <-- AJUSTA a tu Telescopio
+PREFIX = "oan/control/84cm/guiador/motores/"  # <-- AJUSTA a tu Telescopio
 BROKER_HOST = "192.168.0.239"                 # <-- AJUSTA a tu broker MQTT
 BROKER_PORT = 1883
 
 TCP_HOST = "127.0.0.1"
 TCP_PORT = 9055
 
-DEF_LIMITES_CONF_ARCH = "/home/pi/g84/config/limites-motores-guiador-g84.json"
-DEF_CERO_OFFSETS_ARCH = "/home/pi/g84/config/offsets-cero-mecanicos-g84.json"
+DEF_LIMITES_CONF_ARCH = "/home/guiador/config/limites-motores-guiador-g84.json"
+DEF_CERO_OFFSETS_ARCH = "/home/guiador/config/offsets-cero-mecanicos-g84.json"
 POSICION_VALIDA_TIMEOUT_S = 5.0
 MARGEN_LIMITE_AR_DEC = 10.0
 MARGEN_LIMITE_FOCO = 3.0
