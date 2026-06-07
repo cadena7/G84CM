@@ -511,22 +511,28 @@ Flujo recomendado:
 8. Al terminar, mande `DAX 0` y guarde los valores aceptados en
    `rpi/dist/guiador84.cfg`.
 
-Ejemplo de preparacion y entonacion interactiva de DEC:
+Cada instruccion enviada directamente al servo durante la entonacion debe
+terminar con FCMD. Este terminador indica el final del bloque de comandos que
+se enviara al eje.
+
+Secuencia utilizada para la entonacion interactiva de DEC:
 
 ```bash
 # Abrir el lazo, detener la salida y restablecer el servo
-ejedec DAX 0 HABTASK RST FCMD
+ejedec DAX 0 RST FCMD
 
-# Cargar parametros iniciales conservadores
-ejedec KPX 12 KIX 0.001 KDX 0.1 ILX 4000 FCMD
-ejedec VX= 3 AX= 0.6 FCMD
+# Cargar parametros PID, velocidad, aceleracion y ganancia
+ejedec KPX 70 KIX 0.001 KDX 1 ILX 4000 FCMD
+ejedec VX= 2 AX= 0.001 FCMD
+ejedec CGANX 500 2 FCMD
 
-# Cerrar el lazo
-ejedec ERROR_MAXX 6000 CONTROL_PIDX FCMD
+# Cerrar el lazo y enviar una posicion deseada de prueba
+ejedec ERROR_MAXX 0 CONTROL_PIDX FCMD
+ejedec X= 3000 FCMD
 ```
 
-Para probar directamente posiciones deseadas en **cuentas del codificador**,
-use `X=` sobre el eje que se esta entonando. Comience con desplazamientos
+Para probar directamente posiciones deseadas en cuentas del codificador,
+use X= sobre el eje que se esta entonando. Comience con desplazamientos
 pequenos respecto a la posicion actual observada:
 
 ```bash
@@ -541,8 +547,8 @@ ejefoco X= 1000 FCMD
 ejefoco X= 0 FCMD
 ```
 
-No asuma que `X= 0` es una posicion mecanicamente segura: confirme primero el
-cero y las cuentas actuales en `estadopockets.sh`. Evite saltos grandes y
+No asuma que X= 0 es una posicion mecanicamente segura: confirme primero el
+cero y las cuentas actuales en estadopockets.sh. Evite saltos grandes y
 detenga la prueba si el eje se mueve en sentido incorrecto, no converge, activa
 un switch o presenta oscilaciones.
 
@@ -566,9 +572,9 @@ actua directamente sobre las cuentas deseadas del servo.
 Para cambiar parametros al vuelo durante las pruebas:
 
 ```bash
-ejear KPX 8 KIX 0.001 KDX 0.1 ILX 400
-ejear CGANX 5000 2
-ejear AX= 0.025 VX= 2
+ejear KPX 8 KIX 0.001 KDX 0.1 ILX 400 FCMD
+ejear CGANX 5000 2 FCMD
+ejear AX= 0.025 VX= 2 FCMD
 ```
 
 Recomendaciones de ajuste:
@@ -588,7 +594,7 @@ Recomendaciones de ajuste:
 Al finalizar cada prueba o ante comportamiento inesperado:
 
 ```bash
-ejedec DAX 0
+ejedec DAX 0 FCMD
 # Cambiar por ejear o ejefoco segun el eje bajo prueba.
 ```
 
