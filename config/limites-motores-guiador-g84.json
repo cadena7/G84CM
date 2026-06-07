@@ -1,0 +1,21 @@
+{
+  "version": "g84-2026-05-14",
+  "AR": {
+    "unidad": "arcsec",
+    "switch_min": -1512.0,
+    "switch_max": 1385.0,
+    "margen": 10.0
+  },
+  "DEC": {
+    "unidad": "arcsec",
+    "switch_min": -884.0,
+    "switch_max": 1050.0,
+    "margen": 10.0
+  },
+  "FOCO": {
+    "unidad": "mm",
+    "switch_min": -65.0,
+    "switch_max": 48.0,
+    "margen": 3.0
+  }
+}
