@@ -45,7 +45,7 @@ edog84j
 
 
 
-
+#mandar posiciones de pulsos de codificador
 ejedec X= 0  FCMD
 ejear X= 0  FCMD
 ejefoco X= 0  FCMD
@@ -62,6 +62,12 @@ ejedec X= -1000  FCMD
 ejear X= -10000  FCMD
 ejefoco X= -10000  FCMD
 
+
+
+#mandar posiciones de eje en unidades astronomicas
+ag84 AR= 200 FCMD
+ag84 DEC= 200 FCMD
+ag84 FOCO= 5 FCMD
 
 
 
