@@ -16,6 +16,6 @@
     "unidad": "mm",
     "switch_min": -65.0,
     "switch_max": 48.0,
-    "margen": 3.0
+    "margen": 2.0
   }
 }
